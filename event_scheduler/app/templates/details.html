@@ -1,0 +1,14 @@
+{% extends 'master.html'%}
+
+{% block content%}
+    <h1>
+    Event: {{event.title}}
+    </h1>
+    <ul>
+        <li>{{event.title}}</li>
+        <li>{{event.body}}</li>
+        <li>{{event.start}}</li>
+        <li>{{event.duration}}</li>
+    </ul>
+
+{% endblock %}

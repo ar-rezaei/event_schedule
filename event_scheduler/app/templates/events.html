@@ -1,0 +1,17 @@
+{% extends 'master.html'%}
+
+{% block content%}
+<table border="1">
+        <th>Event</th>
+        <th>Start At</th>
+        <th>Duration</th>
+    {% for x in events %}
+    <tr>
+        <td><a href="details/{{x.id}}">{{x.title}}</a></td>
+        <td>{{x.start}}</td>
+        <td>{{x.duration}}</td>
+        
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}

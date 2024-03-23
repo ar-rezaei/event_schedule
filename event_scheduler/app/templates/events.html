@@ -1,6 +1,7 @@
 {% extends 'master.html'%}
 
 {% block content%}
+{% if events %}
 <table border="1">
         <th>Event</th>
         <th>Start At</th>
@@ -10,8 +11,13 @@
         <td><a href="details/{{x.id}}">{{x.title}}</a></td>
         <td>{{x.start}}</td>
         <td>{{x.duration}}</td>
+        <td>{{x.status}}</td>
         
     </tr>
+    
     {% endfor %}
 </table>
+{% else %}
+<p>There is no events</p>
+{% endif %}
 {% endblock %}

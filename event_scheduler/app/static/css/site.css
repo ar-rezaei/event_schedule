@@ -1,14 +1,17 @@
-table tr,td,th {
-    border:1px;
-    border-collapse: collapse;
-} 
+table {
+  width: 100%;
+  border: 1px;
+  border-collapse: collapse;
+}
+table th {
+    background-color: hotpink;
+}
 .past {
-    background-color: blue;
-   
+  background-color: blue;
 }
 .present {
-    background-color:chartreuse;
+  background-color: chartreuse;
 }
 .future {
-    background-color:rgba(255, 0, 0, 0.82);
-} 
+  background-color: rgba(255, 0, 0, 0.82);
+}
